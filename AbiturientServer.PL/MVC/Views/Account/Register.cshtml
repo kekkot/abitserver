@@ -1,0 +1,33 @@
+﻿@model AbiturientServer.PL.MVC.ViewModels.Account.RegisterViewModel
+<h2>Регистрация нового пользователя</h2>
+<form method="post" asp-route="MvcRegisterPost">
+    <div asp-validation-summary="ModelOnly"></div>
+    <div>
+        <label asp-for="UserName"></label><br />
+        <input asp-for="UserName" />
+        <span asp-validation-for="UserName"></span>
+    </div>
+    <div>
+        <label asp-for="Email"></label><br />
+        <input asp-for="Email" />
+        <span asp-validation-for="Email"></span>
+    </div>
+    <div>
+        <label asp-for="Password"></label><br />
+        <input asp-for="Password" />
+        <span asp-validation-for="Password"></span>
+    </div>
+    <div>
+        <label asp-for="PasswordConfirmation"></label><br />
+        <input asp-for="PasswordConfirmation" />
+        <span asp-validation-for="PasswordConfirmation"></span>
+    </div>
+    <div>
+        <label asp-for="PhoneNumber"></label><br />
+        <input asp-for="PhoneNumber" />
+        <span asp-validation-for="PhoneNumber"></span>
+    </div>
+    <div>
+        <input type="submit" value="Регистрация" />
+    </div>
+</form>
